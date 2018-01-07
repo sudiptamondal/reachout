@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:charset => "UTF-8"}
+    %meta{:content => "IE=Edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Poppins:400,500,600", :rel => "stylesheet", :type => "text/css"}
+    %title Reachout
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  %body{"data-offset" => "50", "data-spy" => "scroll", "data-target" => ".navbar-collapse"}
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'

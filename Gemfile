@@ -60,3 +60,4 @@ end
 
 gem 'devise'
 gem 'activeadmin'
+gem 'haml'

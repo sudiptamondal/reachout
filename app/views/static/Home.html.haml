@@ -1,0 +1,326 @@
+.preloader
+  .sk-rotating-plane
+.navbar.navbar-fixed-top.custom-navbar{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse"}
+        %span.icon.icon-bar
+        %span.icon.icon-bar
+        %span.icon.icon-bar
+      %a.navbar-brand{:href => "javascript:void(0);"} Reachout
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.smoothScroll{:href => "#intro"} Intro
+        %li
+          %a.smoothScroll{:href => "#overview"} Overview
+        %li
+          %a.smoothScroll{:href => "#speakers"} Speakers
+        %li
+          %a.smoothScroll{:href => "#program"} Programs
+        %li
+          %a.smoothScroll{:href => "#register"} Register
+        %li
+          %a.smoothScroll{:href => "#venue"} Venue
+        %li
+          %a.smoothScroll{:href => "#sponsors"} Sponsors
+        %li
+          %a.smoothScroll{:href => "#contact"} Contact
+%section#intro.parallax-section
+  .container
+    .row
+      .col-md-12.col-sm-12
+        %h3.wow.bounceIn{"data-wow-delay" => "0.9s"} Voice your Concerns
+        %h1.wow.fadeInUp{"data-wow-delay" => "1.6s"} Emerson Account
+        %a.btn.btn-lg.btn-default.smoothScroll.wow.fadeInUp.hidden-xs{"data-wow-delay" => "2.3s", :href => "#overview"} LEARN MORE
+        %a.btn.btn-lg.btn-danger.smoothScroll.wow.fadeInUp{"data-wow-delay" => "2.3s", :href => "#register"} REGISTER NOW
+%section#overview.parallax-section
+  .container
+    .row
+      .wow.fadeInUp.col-md-6.col-sm-6{"data-wow-delay" => "0.6s"}
+        %h3 Reachout is an application to share your concerns with your Managers and Management
+        %p Everyone is entitled to sharing their opinion. However not everyone is able to do that. Many a times valid and valuable concerns don't reach the right ears. This may cause a friction between Managers and the teams. 
+        %p Reachout provides a forum for all Emersonites to voice their concerns to respective Managers. 
+      .wow.fadeInUp.col-md-6.col-sm-6{"data-wow-delay" => "0.9s"}
+        =image_tag("overview-img.jpg", alt: "Overview", class: "img img-responsive")
+%section#detail.parallax-section
+  .container
+    .row
+      .wow.fadeInLeft.col-md-4.col-sm-4{"data-wow-delay" => "0.3s"}
+        %i.fa.fa-group
+        %h3 300+ Emersonites
+        %p We are a strong family of 300+ Emersonites throughout the World
+      .wow.fadeInUp.col-md-4.col-sm-4{"data-wow-delay" => "0.6s"}
+        %i.fa.fa-clock-o
+        %h3 10+ Projects
+        %p We have over 10+ large projects and many small projects running in the account.
+      .wow.fadeInRight.col-md-4.col-sm-4{"data-wow-delay" => "0.9s"}
+        %i.fa.fa-microphone
+        %h3 30+ Managers
+        %p Emersonites enjoy having over 30+ Managers and Leads who are here for support.
+
+%section#speakers.parallax-section
+  .container
+    .row
+      .col-md-12.col-sm-12.wow.bounceIn
+        .section-title
+          %h2 Our Captains
+          %p The folks who manage Emerson in and out
+      #owl-speakers.owl-carousel
+        .item.wow.fadeInUp.col-md-3.col-sm-3{"data-wow-delay" => "0.9s"}
+          .speakers-wrapper
+            =image_tag("speakers-img1.jpg", alt: "speakers", class: "img img-responsive")
+            .speakers-thumb
+              %h3 Name 1
+              %h6 Delivery Manager
+        .item.wow.fadeInUp.col-md-3.col-sm-3{"data-wow-delay" => "0.6s"}
+          .speakers-wrapper
+            =image_tag("speakers-img2.jpg", alt: "speakers", class: "img img-responsive")
+            .speakers-thumb
+              %h3 Name 2
+              %h6 Senior Project Manager
+        .item.wow.fadeInUp.col-md-3.col-sm-3{"data-wow-delay" => "0.9s"}
+          .speakers-wrapper
+            =image_tag("speakers-img3.jpg", alt: "speakers", class: "img img-responsive")
+            .speakers-thumb
+              %h3 Name 3
+              %h6 Senior Project Manager
+        .item.wow.fadeInUp.col-md-3.col-sm-3{"data-wow-delay" => "0.6s"}
+          .speakers-wrapper
+            =image_tag("speakers-img4.jpg", alt: "speakers", class: "img img-responsive")
+            .speakers-thumb
+              %h3 Name 4
+              %h6 Senior Project Manager
+        .item.wow.fadeInUp.col-md-3.col-sm-3{"data-wow-delay" => "0.6s"}
+          .speakers-wrapper
+            =image_tag("speakers-img5.jpg", alt: "speakers", class: "img img-responsive")
+            .speakers-thumb
+              %h3 Name 5
+              %h6 Senior Project Manager
+%section#video.parallax-section
+  .container
+    .row
+      .wow.fadeInUp.col-md-6.col-sm-10{"data-wow-delay" => "1.3s"}
+        %h2 Watch Video
+        %h3 Why do we need to reachout.
+        %p A video needs to be added here with the reason, why we need Reachout.
+      .wow.fadeInUp.col-md-6.col-sm-10{"data-wow-delay" => "1.6s"}
+        .embed-responsive.embed-responsive-16by9
+          Put video here
+/
+  \=========================
+  FAQ SECTION
+  \==============================
+%section#faq.parallax-section
+  .container
+    .row
+      /
+        Section title
+        \==================================================
+      .wow.bounceIn.col-md-offset-2.col-md-8.col-sm-offset-1.col-sm-10.text-center
+        .section-title
+          %h2 Do you have Questions?
+          %p Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+      .wow.fadeInUp.col-md-offset-1.col-md-10.col-sm-offset-1.col-sm-10{"data-wow-delay" => "0.9s"}
+        #accordion.panel-group{"aria-multiselectable" => "false", :role => "tablist"}
+          .panel.panel-default
+            #headingOne.panel-heading{:role => "tab"}
+              %h4.panel-title
+                %a.collapsed{"aria-controls" => "collapseOne", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+                  What is Responsive Design?
+            #collapseOne.panel-collapse.collapse{"aria-labelledby" => "headingOne", :role => "tabpanel"}
+              .panel-body
+                %p Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+                %p Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.
+          .panel.panel-default
+            #headingTwo.panel-heading{:role => "tab"}
+              %h4.panel-title
+                %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                  What are latest UX Developments?
+            #collapseTwo.panel-collapse.collapse{"aria-labelledby" => "headingTwo", :role => "tabpanel"}
+              .panel-body
+                %p Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.
+                %p Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+          .panel.panel-default
+            #headingThree.panel-heading{:role => "tab"}
+              %h4.panel-title
+                %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+                  What things about Social Media will be discussed?
+            #collapseThree.panel-collapse.collapse{"aria-labelledby" => "headingThree", :role => "tabpanel"}
+              .panel-body
+                %p Aenean vulputate finibus justo et feugiat. Ut turpis lacus, dapibus quis justo id, porttitor tempor justo. Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.
+                %p Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+    /
+      \=========================
+      REGISTER SECTION
+      \==============================
+%section#register.parallax-section
+  .container
+    .row
+      .wow.fadeInUp.col-md-7.col-sm-7{"data-wow-delay" => "0.6s"}
+        %h2 Register Here
+        %h3 Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.
+        %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.
+      .wow.fadeInUp.col-md-5.col-sm-5{"data-wow-delay" => "1s"}
+        %form{:action => "#", :method => "post"}
+          %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text"}/
+          %input#phone.form-control{:name => "phone", :placeholder => "Phone Number", :type => "telephone"}/
+          %input#email.form-control{:name => "email", :placeholder => "Email Address", :type => "email"}/
+          .col-md-offset-6.col-md-6.col-sm-offset-1.col-sm-10
+            %input#submit.form-control{:name => "submit", :type => "submit", :value => "REGISTER"}/
+      .col-md-1
+/
+  \=========================
+  VENUE SECTION
+  \==============================
+%section#venue.parallax-section
+  .container
+    .row
+      .wow.fadeInLeft.col-md-offset-1.col-md-5.col-sm-8{"data-wow-delay" => "0.9s"}
+        %h2 Venue
+        %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.
+        %h4 New Event
+        %h4 120 Market Street, Suite 110
+        %h4 San Francisco, CA 10110
+        %h4 Tel: 010-020-0120
+%section#program.parallax-section
+  .container
+    .row
+      .wow.fadeInUp.col-md-12.col-sm-12{"data-wow-delay" => "0.6s"}
+        .section-title
+          %h2 Our Initiatives
+          %p We have many other initiatives apart from Reachout. 
+      .wow.fadeInUp.col-md-10.col-sm-10{"data-wow-delay" => "0.9s"}
+        / Nav tabs
+        %ul.nav.nav-tabs{:role => "tablist"}
+          %li.active
+            %a{"aria-controls" => "fday", "data-toggle" => "tab", :href => "#fday", :role => "tab"} Emerson Magazine
+          %li
+            %a{"aria-controls" => "sday", "data-toggle" => "tab", :href => "#sday", :role => "tab"} Birthday Wish
+          %li
+            %a{"aria-controls" => "tday", "data-toggle" => "tab", :href => "#tday", :role => "tab"} Something Else
+        / tab panes
+        .tab-content{style: "border: none;"}
+          #fday.tab-pane.active{:role => "tabpanel"}
+            / program speaker here
+            .col-md-2.col-sm-2
+              =image_tag("program-img1.jpg", alt: "program", class: "img img-responsive")
+            .col-md-10.col-sm-10
+              %h6
+                %span
+                  %i.fa.fa-clock-o
+                  Monthly
+                %span
+                  %i.fa.fa-map-marker
+                  Bangalore DC
+              %h3 Emerson Magazine
+              %h4 By <Magazine Team>
+              %p <----------------------------------------Random Text --------------------------------------------->
+            / program divider
+            .program-divider.col-md-12.col-sm-12
+          #sday.tab-pane{:role => "tabpanel"}
+            / program speaker here
+            .col-md-2.col-sm-2
+              =image_tag("program-img4.jpg", alt: "program", class: "img img-responsive")
+            .col-md-10.col-sm-10
+              %h6
+                -#%span
+                  %i.fa.fa-clock-o
+                  11.00 AM
+                %span
+                  %i.fa.fa-map-marker
+                  Hyderabad SEZ DC
+              %h3 Birthday Wisham
+              %h4 By Emerge
+              %p <----------------------------------------Random Text --------------------------------------------->
+            / program divider
+            .program-divider.col-md-12.col-sm-12
+          #tday.tab-pane{:role => "tabpanel"}
+            / program speaker here
+            .col-md-2.col-sm-2
+              =image_tag("program-img7.jpg", alt: "program", class: "img img-responsive")
+            .col-md-10.col-sm-10
+              %h6
+                %span
+                  %i.fa.fa-clock-o
+                  03.00 PM
+                %span
+                  %i.fa.fa-map-marker
+                  Hyderabad STP DC
+              %h3 <Some Initiave>
+              %h4 By Michael Walker
+              %p <----------------------------------------Random Text --------------------------------------------->
+            / program divider
+            .program-divider.col-md-12.col-sm-12
+/
+  \=========================
+  SPONSORS SECTION
+  \==============================
+
+-#%section#sponsors.parallax-section
+  .container
+    .row
+      .wow.bounceIn.col-md-12.col-sm-12
+        .section-title
+          %h2 Our Sponsors
+          %p Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+      .wow.fadeInUp.col-md-3.col-sm-6.col-xs-6{"data-wow-delay" => "0.3s"}
+        =image_tag("sponsor-img1.jpg", alt: "sponsors", class: "img img-responsive")
+      .wow.fadeInUp.col-md-3.col-sm-6.col-xs-6{"data-wow-delay" => "0.6s"}
+        =image_tag("sponsor-img2.jpg", alt: "sponsors", class: "img img-responsive")
+      .wow.fadeInUp.col-md-3.col-sm-6.col-xs-6{"data-wow-delay" => "0.9s"}
+        =image_tag("sponsor-img3.jpg", alt: "sponsors", class: "img img-responsive")
+      .wow.fadeInUp.col-md-3.col-sm-6.col-xs-6{"data-wow-delay" => "1s"}
+        =image_tag("sponsor-img4.jpg", alt: "sponsors", class: "img img-responsive")
+/
+  \=========================
+  CONTACT SECTION
+  \==============================
+%section#contact.parallax-section
+  .container
+    .row
+      .wow.fadeInUp.col-md-offset-1.col-md-5.col-sm-6{"data-wow-delay" => "0.6s"}
+        .contact_des
+          %h3 New Event
+          %p Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.
+          %p Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.
+          %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.
+          %a.btn.btn-danger{:href => "#"} DOWNLOAD NOW
+      .wow.fadeInUp.col-md-5.col-sm-6{"data-wow-delay" => "0.9s"}
+        .contact_detail
+          .section-title
+            %h2 Keep in touch
+          %form{:action => "#", :method => "post"}
+            %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text"}/
+            %input#email.form-control{:name => "email", :placeholder => "Email", :type => "email"}/
+            %textarea#message.form-control{:name => "message", :placeholder => "Message", :rows => "5"}
+            .col-md-6.col-sm-10
+              %input#submit.form-control{:name => "submit", :type => "submit", :value => "SEND"}/
+/
+  \=========================
+  FOOTER SECTION
+  \==============================
+%footer
+  .container
+    .row
+      .col-md-12.col-sm-12
+        %p.wow.fadeInUp{"data-wow-delay" => "0.6s"}
+          Copyright © 2016 Your Company
+          
+          | Design:
+          %a{:href => "http://www.templatemo.com/page/1", :rel => "nofollow", :target => "_parent"} Templatemo
+        %ul.social-icon
+          %li
+            %a.fa.fa-facebook.wow.fadeInUp{"data-wow-delay" => "1s", :href => "javascript:void(0);"}
+          %li
+            %a.fa.fa-twitter.wow.fadeInUp{"data-wow-delay" => "1.3s", :href => "javascript:void(0);"}
+          %li
+            %a.fa.fa-dribbble.wow.fadeInUp{"data-wow-delay" => "1.6s", :href => "javascript:void(0);"}
+          %li
+            %a.fa.fa-behance.wow.fadeInUp{"data-wow-delay" => "1.9s", :href => "javascript:void(0);"}
+          %li
+            %a.fa.fa-google-plus.wow.fadeInUp{"data-wow-delay" => "2s", :href => "javascript:void(0);"}
+/ Back top
+%a.go-top{:href => "#back-top"}
+  %i.fa.fa-angle-up
+
