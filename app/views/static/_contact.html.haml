@@ -16,9 +16,9 @@
         .contact_detail
           .section-title
             %h2 Keep in touch
-          %form{:action => "/concern/admin", :method => "post"}
-            %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text"}/
-            %input#email.form-control{:name => "email", :placeholder => "Email", :type => "email"}/
-            %textarea#message.form-control{:name => "message", :placeholder => "Message", :rows => "5"}
+          = form_for :concern , url: concern_admin_path do |f|
+            = f.text_field :name, placeholder: "Name",id: "name", class: "form-control"
+            = f.text_field :email, placeholder: "Email", id: "email", class: "form-control", type:"email"
+            = f.text_area :text, placeholder: "Message", rows: "5", class: "form-control", id: "message"
             .col-md-6.col-sm-10
-              %input#submit.form-control{:name => "submit", :type => "submit", :value => "SEND"}/
+              %input#submit.form-control{:name => "submit", :type => "submit", :value => "SEND"}

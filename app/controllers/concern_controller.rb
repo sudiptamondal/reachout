@@ -2,17 +2,17 @@ class ConcernController < ApplicationController
   def Home
   end
   def for_admin
-  	if Concern.for_admin(:params)
-		respond_to do |format|
-		  format.js   { render :layout => "success" }
-		  #format.html { render :layout => "notice" }
-		end
+  	if Concern.for_admin concern_admin_param
+		render json: "success"
   	else
-  		respond_to do |format|
-		  format.js   { render :layout => "failure" }
-		  #format.html { render :layout => "notice" }
-		end
+		render json: "failure"
   	end
 
   end
+
+  private 
+
+  	def concern_admin_param
+  		params.require(:concern).permit(:name, :email, :text)
+  	end
 end

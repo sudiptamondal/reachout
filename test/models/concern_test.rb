@@ -10,6 +10,7 @@
 #  updated_at  :datetime         not null
 #  for_admin   :boolean
 #  email       :string
+#  name        :string
 #
 
 require 'test_helper'

@@ -10,10 +10,12 @@
 #  updated_at  :datetime         not null
 #  for_admin   :boolean
 #  email       :string
+#  name        :string
 #
 
 class Concern < ApplicationRecord
-	def self.for_admin
-	    Concern.save(:params)? true : false
+	def self.for_admin vars
+	    Concern.create(vars)
 	end
 end
+	
