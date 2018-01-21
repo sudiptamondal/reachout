@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: logs
+#
+#  id            :integer          not null, primary key
+#  is_model      :boolean
+#  is_controller :boolean
+#  is_view       :boolean
+#  message       :string
+#  stack         :text
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  is_model: false
+  is_controller: false
+  is_view: false
+  message: MyString
+  stack: MyText
+
+two:
+  is_model: false
+  is_controller: false
+  is_view: false
+  message: MyString
+  stack: MyText

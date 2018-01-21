@@ -8,7 +8,12 @@
 #  is_read     :boolean
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  for_admin   :boolean
+#  email       :string
 #
 
 class Concern < ApplicationRecord
+	def self.for_admin
+	    Concern.save(:params)? true : false
+	end
 end

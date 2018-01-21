@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'user/Profile'
 
+  post 'concern/admin' => "concern#for_admin"
+
   # get 'static/Home'
 
   devise_for :admin_users, ActiveAdmin::Devise.config

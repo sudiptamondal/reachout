@@ -8,6 +8,8 @@
 #  is_read     :boolean
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  for_admin   :boolean
+#  email       :string
 #
 
 require 'test_helper'
