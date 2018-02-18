@@ -16,9 +16,13 @@
         .contact_detail
           .section-title
             %h2 Keep in touch
-          = form_for :concern , url: concern_admin_path do |f|
-            = f.text_field :name, placeholder: "Name",id: "name", class: "form-control"
-            = f.text_field :email, placeholder: "Email", id: "email", class: "form-control", type:"email"
-            = f.text_area :text, placeholder: "Message", rows: "5", class: "form-control", id: "message"
+          = form_for :concern , remote: true, url: concern_admin_path do |f|
+            = f.text_field :name, required: true, placeholder: "Name",id: "name", class: "form-control"
+            = f.text_field :email, required: true, placeholder: "Email", id: "email", class: "form-control", type:"email"
+            = f.text_area :text, required: true, placeholder: "Message", rows: "5", class: "form-control", id: "message"
             .col-md-6.col-sm-10
               %input#submit.form-control{:name => "submit", :type => "submit", :value => "SEND"}
+        .contact_thankyou{style:"display: none;"}
+          .section-title
+            %h2 Thank you
+          Your feedback is important to us

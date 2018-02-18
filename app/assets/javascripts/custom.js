@@ -82,5 +82,18 @@ $(document).ready(function() {
   -------------------------------*/
   new WOW({ mobile: false }).init();
 
-  });
+});
+
+var contactthankyou = function() {
+  $(".contact_detail").hide(1000);
+  setTimeout(function() {
+    $(".contact_thankyou").show(1000);
+  },1000);
+  setTimeout(function() {
+    $(".contact_thankyou").hide(1000);
+    setTimeout(function() {
+      $(".contact_detail").show(1000);
+    },1000);
+  },5000);
+};
 

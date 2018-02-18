@@ -3,7 +3,8 @@ class ConcernController < ApplicationController
   end
   def for_admin
   	if Concern.for_admin concern_admin_param
-		render json: "success"
+		render js: "contactthankyou();"
+		# render json: { partial: "static/contact"}
   	else
 		render json: "failure"
   	end
